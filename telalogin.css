@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+}
+
+.Box-degrade{
+    flex-direction: column;
+    padding: 220px;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    background:linear-gradient(0deg, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.5)), url("https://i.postimg.cc/wTQ6g4SM/Screenshot-1.png");
+    
+    
+
+}
+.container{
+    display: flex;
+    height: 300px;
+   width: 300px;
+   border: 1px solid black;
+   box-shadow: 30px black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(8, 8, 8),rgb(39, 26, 33),rgb(54, 51, 51),rgb(132, 114, 114),rgb(193, 187, 187));
+    background-size: 500% 100%;
+    padding: 50px;
+    
+    
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+
+}
+.Box-degrade h1{
+    color: whitesmoke;
+    font-weight: lighter;
+    border: 2px solid black;
+    background-color: rgb(57, 39, 71);
+    
+    
+}
+
+
+
+    @keyframes degrade-animado { 0%{
+        background-position: 0%;
+
+    }
+    100%{
+        background-position: 100%;
+    }
+        
+    }
+    .form-container {
+        width: 300px;
+        background: linear-gradient(180deg,rgba(24, 25, 25, 0.121) 25%,rgb(11, 11, 11) 20%);
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      
+      .form {
+        margin-top: 50px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      
+      .form-container p {
+        position: absolute;
+        top: 10%;
+        left: 35%;
+        font-size: 30px;
+        font-weight: 900;
+        color: rgb(255, 246, 246);
+      }
+      
+      .form-container label {
+        color: rgba(249, 245, 245, 0.277);
+        margin-top: 25px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        padding: 10px;
+      }
+      
+      .form-container .input {
+        padding: 20px;
+        height: 30px;
+        border: none;
+        background-color: rgb(232, 232, 232);
+      }
+      
+      .form-container .input:focus {
+        outline: none;
+      }
+      
+      .form-container button {
+        border: none;
+        height: 50px;
+        padding: 10px;
+        margin-top: 50px;
+        background-color: rgb(26, 27, 27);
+        color: white;
+        font-size: 16px;
+      }
+      
