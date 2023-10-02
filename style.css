@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('C:\Users\sergi\OneDrive\Documentos\Faculdade\Desenvolvimento web\OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+   }
+
+   *{
+    margin: 0;
+    padding: 0;    
+   }
+   .background {
+    background:linear-gradient(0deg, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.5)), url("https://i.postimg.cc/wTQ6g4SM/Screenshot-1.png");
+}  
+.container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        align-items: center;
+    } 
+.menu-pai {
+        background-color: #000814;
+        width: 100%;
+        color: #f2f2f2;
+        height: 8vh;
+        text-decoration: none;
+        color:black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        
+
+    }
+    .icones{
+        border: none;
+        width: 33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 60px;
+        gap: 50px;
+    }
+    .buscar{
+        border: none;
+        width: 33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .buscar input{
+        background-color: #000814;
+        height: 100%;
+        width: 300px;
+        border:none;
+        color: white;
+    }
+    .buscar input :focus{
+        background-color: #000814;
+        border:none;
+        outline: none;
+    }
+    .input-buscar{
+        border-radius: 50px;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        color: white;
+
+    }
+    .input-buscar i{
+        padding: 5px 20px ;
+        cursor: pointer;
+        
+    }
+    .user{
+        border: none;
+        width: 33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right:60px ;
+    }
+  
+    /* CORPO DA PAGINA */
+    .conteudo-principal{
+        background-color: #000814;
+        display:flex;
+        flex-direction: column;
+        color: white;
+        width: 50%;
+        padding: 40px;
+        border-radius: 30px;
+        gap: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+   
+    .politicas-privacidade{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+    .politicas-privacidade:hover p{
+        display: block;
+    }
+    .titulo-conteudo{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .politicas-usuario{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+    .politicas-usuario:hover p{
+        display: block;
+    }
+   
+    .seguranca-dados{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+    .seguranca-dados:hover p{
+        display: block;
+    }
+   
+
+    .cancelamento-conta{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+    .conteudo{
+        border: 1px hidden white;
+        padding-left: 10px;
+    }
+    .cancelamento-conta:hover p{
+        display: block;
+    }
+    .informacao-cancelamento:hover button{
+        display: block;
+    }
+    .informacao-cancelamento{
+        display: flex;
+        position: relative;
+   
+
+    }
+    .botao-cancelar{
+    background-color: #ec0a0a;
+    border-radius: 50px;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    
+}
+
+.custom-button:hover {
+    background-color: #45a049;
+}
+   
+
+    .conteudo-principal p,
+    .politicas-privacidade p,
+    .politicas-usuario p,
+    .seguranca-dados p,
+    .cancelamento-conta p{
+        display: none;
+    }
+
+/* navbar e conteudo da outra */
+ 
+
+
+    
