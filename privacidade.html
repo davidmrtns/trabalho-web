@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Senhas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="CSS PRIVACIDADE/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Senhas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i><span class="rotulo">Início</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-lock"></i><span class="rotulo">Privacidade</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="abrirmodal()"><i class="fa-solid fa-gear"></i><span class="rotulo">Configurações</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-circle-user"></i><span class="rotulo">Conta</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Editar dados</a></li>
+                            <li><a class="dropdown-item" href="#">Verificação de dois fatores</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Desconectar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+      </nav>
+      <div class="container" style="font-family: 'Open Sans';">
+       
+
+        <div class="conteudo-principal">
+                
+            <h1>Privacidade e segurança</h1>
+    
+            <div class="politicas-privacidade">
+                <div class="titulo-conteudo">
+                    <h2><u>Políticas de Privacidade</u></h2>
+                    <i id="icone"class="fa-solid fa-arrow-down" style="color: #ffffff"></i>  
+                </div>
+                <p class="conteudo">A sua privacidade é importante para nós. É política do nosso site respeitar a sua privacidade em relação a qualquer informação que possamos coletar durante a sua visita ao nosso site. Esta Política de Privacidade aplica-se ao nosso site (coloque o nome do site) e a todas as atividades relacionadas.".</p>
+            </div>
+            <div class="politicas-usuario">
+                <div class="titulo-conteudo">
+                    <h2><u>Políticas de Usuario</u></h2>
+                <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i>
+                </div>
+                <p class="conteudo">Quando você enviar ou postar conteúdo no site, você mantém os direitos autorais desse conteúdo. No entanto, você nos concede uma licença não exclusiva, irrevogável, global e livre de royalties para usar, modificar, exibir e distribuir esse conteúdo em conexão com a operação e promoção do site.Podemos solicitar informações pessoais, como o seu nome, endereço de e-mail, endereço postal e número de telefone. Essas informações serão usadas exclusivamente para entrar em contato com você ou identificá-lo de acordo com o motivo da sua interação conosco.</p>
+            </div>
+            <div class="seguranca-dados">
+                <div class="titulo-conteudo">
+                    <h2><u>Segurança de Dados</u></h2>
+                    <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i>
+                </div>
+                <p class="conteudo">Valorizamos a segurança das suas informações pessoais e tomamos medidas razoáveis para protegê-las. No entanto, lembre-se de que nenhum método de transmissão pela internet ou armazenamento eletrônico é 100% seguro, e não podemos garantir a segurança absoluta das suas informações.</p>
+            </div>
+            <div class="cancelamento-conta">
+                <div class="titulo-conteudo"> 
+                    <h2><u>Cancelamento de Conta</u></h2>
+                    <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i>
+                </div>
+                    <p class="conteudo">Por favor, tenha em mente que ao cancelar a sua conta, você perderá todos os dados, histórico e informações associados a ela, e não poderá recuperá-los.Se tiver alguma dúvida ou precisar de assistência adicional, não hesite em entrar em contato com a nossa equipe de suporte. <br> Antes de cancelar a conta, assegure-se de fazer backup de qualquer informação que seja importante para você, como mensagens, fotos, documentos ou qualquer outro conteúdo que deseja preservar.</p>
+                <div class="informacao-cancelamento">     
+                    <button class="botao-cancelar">cancelar</button>
+                </div>
+            </div>
+        </div>
+            
+        <div class="janela-modal" id="janela-modal">
+            <div class="modal" >
+                <button class="fechar" id="fechar">x</button>
+                <H1 link>USUARIO</H1>
+                <H2>ID:TESTE#3462</H2>
+                <H2>E-MAIL:TESTE-MAIL@GMAIL.COM</H2>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/367278d2a4.js" crossorigin="anonymous"></script>
+    <script src="scripts/Modal.js"></script>
+</body>
+</html>
