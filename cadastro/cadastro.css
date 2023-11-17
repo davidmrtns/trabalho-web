@@ -1,0 +1,58 @@
+body{
+    background: linear-gradient(0deg, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.5)), url(../imagens/fundo.png);
+}
+
+div.cadastro{
+    display: flex;
+    justify-content: center;
+}
+
+div.cadastro form{
+    width: 580px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.4px);
+    -webkit-backdrop-filter: blur(12.4px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+div.cadastro form h1{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+div.cadastro form input{
+    height: 33px;
+    width: 78%;
+}
+
+div.cadastro form button{
+    height: 33px;
+    width: 58%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+div.cadastro form button:hover{
+    background:#091122;
+    transition: 1s;
+    color: white;
+}
+
+div.cadastro form div{
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+}
+
+@media only screen and (max-width: 587px), (max-device-width: 587px){
+    div.cadastro form{
+        background: none;
+        backdrop-filter: none;
+        border: 0;
+    }
+}
