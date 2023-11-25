@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Editar dados</title>
+        <link rel="stylesheet" href="/src/estilos/editar.module.css">
+    </head>
+    <body>
+        <main>
+            <div class="editar">
+                <form method="post">
+                    <h1>Editar dados</h1>
+                    <div>
+                        <input type="text" placeholder="Nome" name="nome" required>
+                        <input type="text" placeholder="Sobrenome" name="sobrenome" required>
+                        <input type="text" placeholder="CPF" name="cpf" id="cpf" required>
+                        <input type="tel" placeholder="Telefone" name="telefone" id="telefone" required>
+                        <input type="text" placeholder="Nacionalidade" name="nacionalidade" required>
+                        <input type="text" placeholder="Nome de usuário" name="username" required>
+                        <input type="email" placeholder="E-mail" name="email" required>
+                        <input type="password" placeholder="Senha" name="senha" required>
+                        <button type="submit">Editar</button>
+                        <a href="/">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+        <script src="/src/scripts/cadastro.module.js"></script>
+    </body>
+</html>

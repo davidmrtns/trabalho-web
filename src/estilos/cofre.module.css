@@ -1,6 +1,5 @@
 body{
-    background:linear-gradient(0deg, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.5)), url("../imagens/fundo.png");
-    /*background-image: url("../imagens/fundo.png");*/
+    background: linear-gradient(0deg, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.5)), url(https://i.postimg.cc/wTQ6g4SM/Screenshot-1.png);
 }
 
 .navbar-dark, .navbar[data-bs-theme=dark]{
@@ -30,6 +29,11 @@ nav form.d-flex button.btn{
 
 nav button.navbar-toggler{
     border: 0;
+}
+
+nav div.navbar-collapse ul li a span.rotulo{
+    display: unset;
+    margin-left: 8px;
 }
 
 div.collapse{
@@ -68,7 +72,7 @@ section.senhas div.provedor img{
 
 section.senhas div.card{
     background: transparent;
-    flex: 0 0 21%;
+    flex: 0 0 86%;
 }
 
 section.senhas div.card-body{
@@ -119,10 +123,6 @@ section.senhas div.campos button:hover{
     background-color: #253f76;
     color: white;
     transition: 0.5s;
-}
-
-nav div.navbar-collapse ul li a span.rotulo{
-    display: none;
 }
 
 .janela-modal{
@@ -182,28 +182,21 @@ nav div.navbar-collapse ul li a span.rotulo{
     animation: abrirmodal 0.5s;
 }
 
-@media only screen and (max-device-width: 992px), (max-width: 992px){
-    nav div.navbar-collapse ul li a span.rotulo{
-        display: unset;
-        margin-left: 8px;
-    }
-}
-
-/*Mobile Design*/
-@media only screen and (max-device-width: 768px), (max-width: 768px){
-    section.senhas div.card {
-        flex: 0 0 45%;
-    }
-}
-
-@media only screen and (max-device-width: 470px), (max-width: 470px){
+@media only screen and (min-device-width: 470px), (min-width: 470px){
     section.senhas div.card {
         flex: 0 0 47%;
     }
 }
 
-@media only screen and (max-device-width: 420px), (max-width: 420px){
+@media only screen and (min-device-width: 716px), (min-width: 716px){
     section.senhas div.card {
-        flex: 0 0 86%;
+        flex: 0 0 21%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    nav div.navbar-collapse ul li a span.rotulo{
+        display: none;
+        margin-left: 0;
     }
 }
