@@ -9,7 +9,7 @@
     <body>
         <main>
             <div class="cadastro">
-                <form method="post">
+                <form>
                     <h1>Cadastre-se</h1>
                     <div>
                         <input type="text" placeholder="Nome" name="nome" required>
@@ -20,12 +20,13 @@
                         <input type="text" placeholder="Nome de usuário" name="username" required>
                         <input type="email" placeholder="E-mail" name="email" required>
                         <input type="password" placeholder="Senha" name="senha" required>
-                        <button type="submit">Cadastrar</button>
+                        <button type="button" id="botao-cadastrar">Cadastrar</button>
                     </div>
                 </form>
             </div>
         </main>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+        <script src="../src/scripts/cadastro.module.js"></script>
     </body>
 </html>
